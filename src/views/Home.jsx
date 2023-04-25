@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Loading from '../components/Loading';
+// import Loading from '../components/Loading';
 import Header from '../components/Header';
 import SubNavLeft from '../components/SubNavLeft';
 import SubNavRight from '../components/SubNavRight';
