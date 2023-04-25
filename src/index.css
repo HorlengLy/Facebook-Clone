@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Bokor&family=Chivo+Mono:ital@1&family=Koulen&family=Lato:wght@700&family=Lora:ital@1&family=Odor+Mean+Chey&family=Roboto&family=Roboto+Mono:wght@500&family=Schibsted+Grotesk&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    @apply text-gray-600 font-roboto m-0 p-0 box-border
+}
+body{
+    @apply bg-gray-200
+}
+input[type="search"]::-webkit-search-cancel-button{
+    display: none;
+}
+input:not(input[type="checkbox"]){
+    @apply py-[10px] outline-none text-[16px] w-full placeholder:text-sm font-roboto transition-all duration-150
+}
+button{
+   @apply py-2 transition-all duration-200 rounded text-sm 
+}
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+body{
+     min-height: 100vh;
+     overflow-x: hidden;
 }
